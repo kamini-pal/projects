@@ -18,6 +18,9 @@
 }
 body{
   background-color: #fefefe;
+    /* margin: 0; */
+  /* padding: 0; */
+
 }
 /* navigation bar  */
 header{
@@ -52,10 +55,14 @@ header{
 .nav-bar ul li a:hover{
   color: var(--navcolor);
   background-color: var(--navfont);
+  border-radius: 50px;
 }
 .nav-bar ul li a.active{
   color:var(--navcolor);
   background-color: var(--navfont);
+  /* border-bottom: 8px solid #06C167; */
+ 
+
 }
 @media only screen and (max-width:1320px){
   header{
@@ -131,7 +138,7 @@ header{
 .banner{
   width: auto;
   height: auto;
-  background:url('img/photo1672794248\ \(1\).jpeg')no-repeat;
+  background:url('img/coverimage.jpeg')no-repeat;
   background-size: cover;
   display: grid;
   place-items:center;
@@ -147,7 +154,7 @@ and (min-device-width : 1200px)
       align-items: flex-end;
     width: 100%;
      height:80vh;
-    background:url('img/photo1672794248\ \(1\).jpeg')no-repeat;
+    background:url('img/coverimage.jpeg')no-repeat;
     background-size: cover;
     display: grid;
     padding-top: 8rem;
@@ -246,7 +253,9 @@ and (min-device-width : 1200px)
 
 .footer .footer-center {
   width: 30%;
+
 }
+
 
 
 
@@ -317,6 +326,11 @@ and (min-device-width : 1200px)
   font-size: 30px;
   text-align: center;
 }
+.para{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
 
 @media (max-width: 767px) {
   .content{
@@ -333,7 +347,6 @@ and (min-device-width : 1200px)
    height: 100%;
   }
   
-  
   .footer {
     font-size: 14px;
   }
@@ -345,17 +358,24 @@ and (min-device-width : 1200px)
     margin-bottom: 60px;
     text-align: center;
   }
-  .social{
-    
+  .sociallist{
+  
     padding-left: 60px;
+    
   }
+  
+      
 
   
 }
 
 /* social */
+.sociallist{
+
+}
 .social
 {
+  
   position: absolute;
   display: flex;
   justify-content: center;
@@ -364,14 +384,15 @@ and (min-device-width : 1200px)
 .social li
 {
   list-style: none;
+
 }
 .social li a
 {
   display: inline-block;
-
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
+  
 }
 .social li a:hover
 {
@@ -402,12 +423,16 @@ and (min-device-width : 1200px)
   transition: 0.5s all  ease-in-out;
 }
 .wrapper img:hover{
-   transform: scale(.9);
+  transform: scale(.9);
 
 }
 .heading{
  font-size: 28px;
- text-align: center; 
+ text-align: center;
+ align-items: center; 
  text-decoration: underline 5px;
  text-decoration-color: #06C167;
+}
+.heading:hover{
+  /* letter-spacing: 3px; */
 }

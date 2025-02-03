@@ -1,9 +1,15 @@
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
 body{
     background-image: url("");
 
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     background-color: #06C167;
+     /* outline: none; */
+  font-family: 'Poppins', sans-serif;
+
 
     
 
@@ -16,19 +22,42 @@ body{
 
 
 .regform{ 
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  border: 1px solid  rgba(0,0,0,0.05);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  */
+
+    width:430px;
+    background-color:white;
+    padding: 20px 20px 20px 20px;
+
+
+    margin: 20px auto ;
+    color:black;
+  
+    font-size: 20px;
+    border-radius: 10px ;
+    /* border: 1px solid black; */
     
-    width:450px;
+}
+.regformf{
+  width:480px;
     background-color:white;
 
     margin: 20px auto ;
     color:black;
     padding: 20px 20px 20px 20px;
-    /* font-size: 20px; */
+    font-size: 20px;
     border-radius: 10px ;
     /* border: 1px solid black; */
-    
-}
 
+}
 
 
  #heading{
@@ -82,6 +111,9 @@ button{
 button:hover{
     /* background-color:white; */
     color: #eeeeee;
+    transform: scale(.98);
+
+  
 }
 .regform .signin-up{
     font-size: 20px; 
@@ -118,6 +150,20 @@ button:hover{
   cursor: pointer;
 
 }
+.uil{
+  
+  top:50%;
+ bottom: 4%;
+  right: 4%;
+  /* font-size: 48px; */
+  cursor: pointer; 
+  position: absolute;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  color: #595757;
+  font-size: 23px;
+  transition: all 0.2s ease;
+}
 
 .image-radio-group input[type="radio"] {
     display: none;
@@ -139,7 +185,7 @@ button:hover{
   }
   
   .image-radio-group img{
-    width: 218px;
+    width: 215px;
     /* height: 120px; */
     align-items:center;
     
@@ -159,7 +205,12 @@ button:hover{
 
 
 @media (max-width: 767px) {
+
+
     .regform{ 
+      /* position: absolute;
+      top: 50%;
+      left: 50%; */
     
         width: 300px;
         background-color:white;
@@ -173,6 +224,20 @@ button:hover{
         /* border: 1px solid black; */
         
     }
+    .regformf{
+      width: 300px;
+        background-color:white;
+
+    
+        margin: 40px auto ;
+        color:black;
+        padding: 20px 20px 20px 20px;
+        font-size: 15px;
+        /* border-radius: 30px ; */
+        /* border: 1px solid black; */
+        
+
+    }
     .logo{
         text-align: center;
         font-size: 18px;
@@ -184,6 +249,9 @@ button:hover{
         text-align: center;
         font-size: 22px;
         
+    }
+    #signin-up{
+      /* font-size: 16px; */
     }
     button{
       font-size: 16px;
@@ -200,3 +268,15 @@ button:hover{
 }
 
 
+.error {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #d93025;
+  
+}
+h1{
+  /* font-size: 29px; */
+}

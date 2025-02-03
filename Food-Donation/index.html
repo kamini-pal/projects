@@ -5,113 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="home.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="home.css"> -->
 </head>
-<body>
-    <header>
-        <div class="logo">Food <b style="color: #06C167;">Donate</b></div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="about.html" >About</a></li>
-                <li><a href="contact.html" >Contact</a></li>
-                <li><a href="loginindex.html">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
-    <script>
-        hamburger=document.querySelector(".hamburger");
-        hamburger.onclick =function(){
-            navBar=document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
-    </script>
-    <section class="banner">
-        <a href="fooddonate.html">Donate Food</a>
-    </section>
-    <div class="content">
-        <!-- <h2>Love Food</h2>
-        <h3>Hate Wasting</h3> -->
-        <p style="font-size: 23px;">
-            “Cutting food waste is a delicious way of saving money, helping to feed the world and protect the planet.” 
-        </p>
-       
-    </div>
-    <div class="photo">
-        <br>
-        <p class="heading">Our Works</p>
-        <br>
-        <p style="font-size: 28px; text-align: center;">"Look what we can do together."</p>
-       <br>
-        <div class="wrapper">
-          <div class="box"><img src="img/p1.jpeg" alt=""></div>
-          <div class="box"><img src="img/p4.jpeg" alt=""></div>
-          <div class="box"><img src="img/p3.jpeg" alt=""></div>
-        </div>
-       <!--   <p style="font-size: 19px;"> The basic concept of this project  Food Waste Management is to collect theexcess/leftover food from donors such as hotels, restaurants, marriage halls, etc and distribute to  the  needy people .
-        </p> -->
-        
-    </div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;1,400;1,600&display=swap');
     
-      <div class="deli" style="display: grid;" >
-      <p class="heading">DOOR PICKUP</p>
-      <br>
-      <p  class="para">"Your donate will be immediately collected and sent to needy people "</p>
-      <img src="img/delivery.gif" alt="" style="margin-left:auto; margin-right: auto;">
 
-    </div>
- <!--   <div class="ser">
-      <p class="heading">Our Services</p>
-      
-    </div> -->
+
+    .logo{
+        padding-top: 30px;
+        font-size: 35px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .para{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    a{
+        /* text-align: center; */
+        display: inline-block;
+  /* font-size: 1em; */
+  font-size: 20px;
+  background:#06C167;
+  padding: 10px 30px;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  font-weight: 500;
+  margin:10px auto 10px auto;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: 0.2s;
+    }
+    a:hover {
+     letter-spacing: 6px;
+    }
+    .log{
+        /* width: 50%; */
+        margin: auto;
+        display:grid;
+        align-items: center;
+        
     
-    <footer class="footer">
-        <div class="footer-left col-md-4 col-sm-6">
-          <p class="about">
-            <span> About us</span>The basic concept of this project  Food Waste Management is to collect the excess/leftover  food from donors such as hotels, restaurants, marriage halls , etc and distribute to  the  needy people .
-     </p>
+        /* border: 1px solid black; */
+        /* align-items: center; */
         
-        </div>
-        <div class="footer-center col-md-4 col-sm-6">
-          <div>
-            <p><span> Contact</span> </p>
-            
-          </div>
-          <div>
-        
-            <p> (+91) 3456 990 999</p>
-            
-          </div>
-          <div>
-        
-            <p><a href="#"> Food_donate@gmail.com</a></p>
-          </div>
-          <div class="sociallist">
-            <ul class="social">
-            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-            <li><a href="https://github.com/mishrashivamm"><i class="fa fa-github" style="font-size:50px;color: black;"></i></a></li>
-           </ul>
-          </div>
-        </div>
-        <div class="footer-right col-md-4 col-sm-6">
-          <h2> Food<span> Donate</span></h2>
-          <p class="menu">
-            <a href="index.html"> Home</a> |
-            <a href="about.html"> About</a> |
-            <a href="fooddonate.html"> Donate</a> |
-            <a href="contact.html"> Contact</a>
-          </p>
-          <p class="name"> Food Donate &copy; 2024</p>
-        </div>
-      </footer>
+    }
+    .add{
+        margin: auto;
+        display:inline-block;
+        align-items:center;
+        padding-left: 540px;
+    }
+    #delivery{
+
+    }
+    /* .log img{
+        margin: auto;
+        width: auto;
+        height: auto;
+    } */
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        font-size: 30px;
+        padding:50px 50px 20px 50px;
+    }
+    .para{
+        font-size: 20px;
+    }
+    a{
+        font-size: 18px;
+    }
+    .add{
+        margin: auto;
+        display:inline-block;
+        align-items:center;
+        padding-left: 30px;
+    }
+}
+</style>
+<body>
+    <p class="logo"> Welcome to Food <b style="color: #06C167; ">Donate</b></p>
+    <p class="para"> Login as</p>
+<div class="log">
+    <!-- <img src="userlog.jpg" alt=""> -->
+    <a href="signup.php">User </a>
+    <a href="admin/signup.php">Admin</a>
+    <i class="fa-solid fa-moped"></i>
+ 
+    <a href="delivery/deliverysignup.php" id="delivery">    <i class="fa-regular fa-moped"></i> Delivery</a>
+   
+  
+</div>
+
+<div class="add">
+ 
+</div>
+
 
     
 </body>
