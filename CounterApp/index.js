@@ -22,4 +22,5 @@ decrement.addEventListener('click', () => {
 reset.addEventListener('click', () => {
     
     count.innerText = 0
+    input.value = 1
 })
